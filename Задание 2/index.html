@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Данные о размерах экрана</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <button id="getScreenInfoBtn" class="btn">Получить информацию о размерах экрана</button>
+    <script>
+        const button = document.getElementById('getScreenInfoBtn');
+
+        button.addEventListener('click', () => {
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const innerWidth = window.innerWidth;
+            const innerHeight = window.innerHeight;
+
+            alert(`Размеры экрана:\n Ширина: ${screenWidth}px\n Высота: ${screenHeight}px`);
+            alert(`Внутренние размеры окна:\n Ширина: ${innerWidth}px\n Высота: ${innerHeight}px`);
+        });
+    </script>
+</main>
+</body>
+</html>
